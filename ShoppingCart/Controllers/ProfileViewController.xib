@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamPro-Medium.otf">
+            <string>GothamPro-Medium</string>
+        </array>
+        <array key="GothamPro.otf">
+            <string>GothamPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="TableViewDelivery" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="aXs-24-JIE" id="Xzc-fo-fzE"/>
+                <outlet property="backgroundView" destination="2ca-k3-GlC" id="e6r-P6-Fk7"/>
+                <outlet property="nameLabel" destination="RgC-2G-4lb" id="KXY-Bx-jk5"/>
+                <outlet property="profileImage" destination="AgI-nb-4Ak" id="x2q-cM-luE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ca-k3-GlC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AgI-nb-4Ak">
+                            <rect key="frame" x="15" y="21" width="65" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="Up0-qB-6ld"/>
+                                <constraint firstAttribute="height" constant="58" id="b03-sI-40m"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgC-2G-4lb">
+                            <rect key="frame" x="88" y="40" width="33.5" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="8eL-sE-eTt"/>
+                                <constraint firstAttribute="height" constant="21" id="dHE-0c-gQx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="12"/>
+                            <color key="textColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXs-24-JIE">
+                            <rect key="frame" x="88" y="58" width="33" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="jKu-st-EGF"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="r7w-Eh-p7c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="12"/>
+                            <color key="textColor" red="0.82221247874149661" green="0.82221247874149661" blue="0.82221247874149661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="AgI-nb-4Ak" firstAttribute="top" secondItem="2ca-k3-GlC" secondAttribute="top" constant="21" id="0Vw-Vd-7iU"/>
+                        <constraint firstAttribute="height" constant="99" id="355-Or-xrK"/>
+                        <constraint firstAttribute="bottom" secondItem="aXs-24-JIE" secondAttribute="bottom" constant="20" id="7Am-Rd-Lfq"/>
+                        <constraint firstAttribute="bottom" secondItem="AgI-nb-4Ak" secondAttribute="bottom" constant="20" id="7xK-WM-uVo"/>
+                        <constraint firstItem="aXs-24-JIE" firstAttribute="leading" secondItem="AgI-nb-4Ak" secondAttribute="trailing" constant="8" id="PyH-xc-3HE"/>
+                        <constraint firstAttribute="bottom" secondItem="RgC-2G-4lb" secondAttribute="bottom" constant="38" id="Q2S-Ka-UCL"/>
+                        <constraint firstItem="RgC-2G-4lb" firstAttribute="top" secondItem="2ca-k3-GlC" secondAttribute="top" constant="40" id="TFu-1T-HL0"/>
+                        <constraint firstItem="aXs-24-JIE" firstAttribute="top" secondItem="2ca-k3-GlC" secondAttribute="top" constant="58" id="ZjI-dR-ABC"/>
+                        <constraint firstItem="RgC-2G-4lb" firstAttribute="leading" secondItem="AgI-nb-4Ak" secondAttribute="trailing" constant="8" id="gQp-v5-2AX"/>
+                        <constraint firstItem="AgI-nb-4Ak" firstAttribute="leading" secondItem="2ca-k3-GlC" secondAttribute="leading" constant="15" id="hlc-m9-iBS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2ca-k3-GlC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ASp-GW-4g9"/>
+                <constraint firstItem="2ca-k3-GlC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="M1M-6w-tvH"/>
+                <constraint firstItem="2ca-k3-GlC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZXs-xP-sju"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
